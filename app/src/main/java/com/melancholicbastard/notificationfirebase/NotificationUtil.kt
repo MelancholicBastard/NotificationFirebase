@@ -42,9 +42,9 @@ object NotificationUtil {
             .setSmallIcon(R.mipmap.stenly)
             .setPriority(NotificationManager.IMPORTANCE_DEFAULT)
             .setContentIntent(pendingIntent)
-//            .addAction(R.mipmap.music_back, "Previous", getPandingIntent(context, 2))
-//            .addAction(R.drawable.pause, "Stop/play", getPandingIntent(context, 3))
-//            .addAction(R.mipmap.music_forward, "Next", getPandingIntent(context, 4))
+            .addAction(R.mipmap.music_back, "Previous", getPandingIntent(context, 2))
+            .addAction(R.drawable.pause, "Stop/play", getPandingIntent(context, 3))
+            .addAction(R.mipmap.music_forward, "Next", getPandingIntent(context, 4))
             .setAutoCancel(true)
 
         with(NotificationManagerCompat.from(context)) {
@@ -59,16 +59,16 @@ object NotificationUtil {
         }
     }
 
-//    private fun getPandingIntent(context: Context, requestCode: Int): PendingIntent? {
-//        val intent = Intent(context, NotificationResivedInformation::class.java).apply {
-//            flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-//            action = "Button${requestCode}"
-//        }
-//        return PendingIntent.getBroadcast(
-//            context,
-//            requestCode,
-//            intent,
-//            PendingIntent.FLAG_IMMUTABLE
-//        )
-//    }
+    private fun getPandingIntent(context: Context, requestCode: Int): PendingIntent? {
+        val intent = Intent(context, NotificationResivedInformation::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            action = "Button${requestCode}"
+        }
+        return PendingIntent.getBroadcast(
+            context,
+            requestCode,
+            intent,
+            PendingIntent.FLAG_IMMUTABLE
+        )
+    }
 }
