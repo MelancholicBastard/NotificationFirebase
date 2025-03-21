@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "362315633027",
+    "project_id": "damirsample-firebase-nai-app",
+    "storage_bucket": "damirsample-firebase-nai-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362315633027:android:8c2dd06e55e5201ea4e6b6",
+        "android_client_info": {
+          "package_name": "com.melancholicbastard.notificationfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFjHqpU7nmEuqmoVTogxcSwjiLOKYgffs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
